@@ -28,25 +28,14 @@ function draw() {
   handle.display();
   chain1.display();
 
-  if(keyDown("space")) {
-    bob.body.position.x = mouseX;
-    bob.body.position.y = mouseY;
+  
+
+if(bob.body.position.x>0){
+  bob.body.position.x = bob.body.position.x + 10;
 }
 
-if(bob.body.position.x>400){
-  bob.body.position.x = bob.body.position.x - 2
-}
-
-if(bob.body.position.x<400 ){
-  bob.body.position.x = bob.body.position.x + 2
-}
-
-if(bob.body.position.x==400){
-  bob.body.position.y = bob.body.position.y + 4;
-}
-
-if(bob.body.position.y==500 || bob.body.position.y>500){
-  bob.body.position.y = bob.body.position.y - 200;
+if(bob.body.position.x==800 ){
+  bob.body.position.x = bob.body.position.x - 700;
 }
 
   drawSprites();
